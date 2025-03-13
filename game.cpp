@@ -28,6 +28,32 @@ using namespace std;
 // Conversion between units
 
 // Function Protypes
+
+//create a structure for monster object
+
+struct player {
+    string name;
+    //array of available items in player's inventory
+    string items[];
+
+};
+
+struct npc{
+    string name;
+    // amount awarded to player when player wins against npc
+    int winPay;
+    monster monsInv;
+};
+
+struct monster{
+    // name of individual monster
+    string name;
+    int level;
+    char moveSet[];
+
+};
+
+
 int main(int argv, char **argc)
 {
     // Random seeds are set for random number generator
